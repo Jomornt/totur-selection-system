@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>选课系统</title>
+
+    <!-- Bootstrap -->
+    <link href="styles/loading.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="SignIn">
+    	<span id="HZNU">HZNU</span>
+    	<form class="bs-example bs-example-form signgroup" role="form" action="php/load.php" method="post">  
+            <div class="input-group input-group-lg">  
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>  
+                <input type="text" class="form-control" placeholder="UserID" name="userID" required>  
+            </div>
+            <div class="input-group input-group-lg">  
+                <span class="input-group-addon"><i class="glyphicon glyphicon-th-large"></i></span>  
+                <input type="password" class="form-control" placeholder="passWord" name="passWord" required>  
+            </div>
+            <div id="idChoose" class="radio-primary">
+    			<label>
+      				<input type="radio" name="client" value="students" checked>Student
+    			</label>
+    			<label>
+      				<input type="radio" name="client" value="teacher">Teacher
+    			</label>
+    			<label>
+      				<input type="radio" name="client" value="manager">Admin
+    			</label>
+  			</div>
+  			<button type="submit" class="btn btn-info" src="student2.html"><span id="SignBtn">Sign In</span>
+            </button>
+        </form>  
+    </div>
+    <script src="scripts/jquery-3.0.0.min.js"></script> 
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- 自己的JS放在最后 -->

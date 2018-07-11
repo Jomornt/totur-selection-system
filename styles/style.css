@@ -1,0 +1,76 @@
+/*主体css*/
+body {  
+    background: -o-linear-gradient(left, #F0FFF0,#FFFAF0,#F0F8FF); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, #F0FFF0,#FFFAF0,#F0F8FF); /* Firefox 3.6 - 15 */
+    background: -webkit-linear-gradient(left, #F0FFF0,#FFFAF0,#F0F8FF);
+    background: linear-gradient(left, #F0FFF0,#FFFAF0,#F0F8FF);
+    color: black;
+    margin-top: 55px;
+}
+#content{
+    height: 550px;
+    border:8px #99CCCC solid;
+    border-radius: 10px;
+    overflow:auto;
+    background-color: rgba(255,255,255,0.4);
+}
+.profileStyle{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+fieldset{
+    margin-top: 30px;
+}
+legend,#pw-change .form-group{
+    margin-bottom: 40px;
+}
+dd{
+    margin-bottom: 30px;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*左边菜单css*/
+#left-select button{
+    width: 100px;
+}
+/*主页*/
+#home{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*个人信息*/
+#perMessage img,#mytea-view img,#mystu-view img{
+    width: 220px;
+    height: 250px;
+    border:2px lightblue solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+/*头像修改*/
+#photo-change img{
+    width: 300px;
+}
+/*密码修改*/
+#pw-change button{
+    margin-left: 473px;
+}
+/*我的老师*/
+#tea-select,#per-select,#stu-select,#admin-select,#admin-tea-select,#admin-stu-select{
+    margin:0;
+    padding: 0;
+    display: none;
+}
+/*发送信息*/
+#admin-assert-info fieldset{
+    margin-left: 50px;
+}
+#recipient{
+    width: 300px;
+}
